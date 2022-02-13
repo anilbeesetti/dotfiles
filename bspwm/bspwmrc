@@ -85,3 +85,4 @@ xsetroot -cursor_name left_ptr
 nitrogen --restore
 
 $HOME/.config/bin/launch_picom.sh
+$HOME/.config/bin/launch_polybar.sh

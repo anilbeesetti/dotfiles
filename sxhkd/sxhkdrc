@@ -23,7 +23,7 @@ super + shift + {f,w,e}
 
 # Terminal Apps
 ctrl + alt + {v,n,r,h,b}
-	alacritty --config-file ~/.config/bspwm/alacritty/alacritty.yml -e {vim,nvim,ranger,htop,bashtop}
+	alacritty --config-file ~/.config/alacritty/alacritty.yml -e {vim,nvim,ranger,htop,bashtop}
 
 # Color Picker
 super + p

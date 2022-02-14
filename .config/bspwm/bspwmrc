@@ -81,8 +81,8 @@ sxhkd &
 # Fix cursor
 xsetroot -cursor_name left_ptr
 
-# Restore wallpaper
-nitrogen --restore
+# Restore or set wallpaper
+set_wallpaper
 
 $HOME/.config/bin/launch_picom.sh
 $HOME/.config/bin/launch_polybar.sh

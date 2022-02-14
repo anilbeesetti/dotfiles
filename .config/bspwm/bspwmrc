@@ -82,7 +82,7 @@ sxhkd &
 xsetroot -cursor_name left_ptr
 
 # Restore or set wallpaper
-set_wallpaper
+set_wallpaper &
 
-$HOME/.config/bin/launch_picom.sh
-$HOME/.config/bin/launch_polybar.sh
+$HOME/.config/bin/launch_picom.sh &
+$HOME/.config/bin/launch_polybar.sh &

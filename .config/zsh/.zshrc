@@ -14,6 +14,7 @@ prompt spaceship
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_VI_MODE_SHOW=false
 
 # Basic auto/tab complete:
 autoload -U compinit

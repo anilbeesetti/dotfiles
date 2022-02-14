@@ -1,3 +1,5 @@
+#!/usr/bin/zsh
+
 export EDITOR="vim"
 export TERMINAL="alacritty"
 export BROWSER="firefox"
@@ -13,5 +15,12 @@ export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
+
+
+# Other Programs
+export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+
 
 export PATH=$PATH:$HOME/.local/bin

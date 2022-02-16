@@ -3,3 +3,5 @@
 alias ls='ls --color=auto'
 alias ll='ls -lah'
 alias la='ls -A'
+
+alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'

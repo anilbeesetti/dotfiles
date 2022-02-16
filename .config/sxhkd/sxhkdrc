@@ -13,9 +13,13 @@ super + shift + Return
 
 # Terminal (fullscreen)
 super + t
-	~/.config/bin/bspterm/bspterm -s	
+	~/.config/bin/bspterm/bspterm -s
 
 ##---------- Applications ----------##
+
+# App Launcher
+alt + F1
+    dmenu_run
 
 # Launch Apps
 super + shift + {f,w,e}
@@ -41,7 +45,7 @@ XF86Audio{RaiseVolume,LowerVolume}
 
 XF86AudioMute
 	volume --toggle
-	
+
 # Music control
 XF86Audio{Next,Prev,Play,Stop}
 	mpc {next,prev,toggle,stop}
@@ -63,7 +67,7 @@ ctrl + alt + Escape
 # Quit/Restart bspwm
 ctrl + shift + {q,r}
 	bspc {quit,wm -r}
-	
+
 # Split horizontal, vertical or cancel
 super + {h,v,q}
 	bspc node -p {east,south,cancel}
@@ -113,11 +117,11 @@ super + {_,shift + }{1-8}
 # Expanding windows
 super + control + {Left,Right,Up,Down}
 	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
-	
+
 ## Shrinking windows
 super + alt + {Left,Right,Up,Down}
 	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
-	
+
 ## Move floating windows
 alt + shift + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}

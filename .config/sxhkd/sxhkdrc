@@ -25,6 +25,8 @@ alt + F1
 super + shift + {f,w,e}
 	{pcmanfm,firefox,geany}
 
+super + x
+    power_menu
 
 # Lockscreen
 ctrl + alt + l
@@ -34,10 +36,10 @@ ctrl + alt + l
 
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume}
-	volume{ --inc, --dec}
+	pamixer{ -i5, -d5 }
 
 XF86AudioMute
-	volume --toggle
+	pamixer -t
 
 # Music control
 XF86Audio{Next,Prev,Play,Stop}

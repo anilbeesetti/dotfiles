@@ -5,3 +5,11 @@ alias ll='ls -lah'
 alias la='ls -A'
 
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+fopen() {
+    xdg-open "$(find $HOME -type f | fzf)"
+}
+
+viopen() {
+    vim "$(find $HOME -type f | fzf)"
+}

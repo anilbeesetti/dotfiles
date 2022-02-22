@@ -19,7 +19,7 @@ super + t
 
 # App Launcher
 alt + F1
-    dmenu_run
+    dmenyou_run
 
 # Launch Apps
 super + shift + {f,w,e}
@@ -67,7 +67,7 @@ ctrl + shift + {q,r}
 	bspc {quit,wm -r}
 
 # Split horizontal, vertical or cancel
-ctrl + {s,v,q}
+ctrl + alt + {s,v,q}
 	bspc node -p {east,south,cancel}
 
 # Preselect the ratio

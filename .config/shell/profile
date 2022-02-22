@@ -17,8 +17,6 @@ export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
 export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-
-
 export PATH=$PATH:$HOME/.local/bin
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then

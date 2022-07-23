@@ -76,5 +76,6 @@ sxhkd &
 # Fix cursor
 xsetroot -cursor_name left_ptr
 
+$HOME/.config/bin/bspcolors
 $HOME/.config/bin/launch_picom.sh &
 $HOME/.config/bin/launch_polybar.sh &

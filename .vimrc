@@ -22,7 +22,15 @@ set runtimepath+=~/.config/vim,~/.config/vim/after
 
 call plug#begin('~/.config/vim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }
+
+Plug 'https://github.com/xavierd/clang_complete.git'
 call plug#end()
+
+
+let g:clang_library_path='/usr/lib'
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_complete_copen = 1
 
 let mapleader = " "
 let g:netrw_banner = 0

@@ -102,7 +102,11 @@ bsprofi () {
 ## Write dunstrc file with current theme colors
 bspdunst () {
 	sed -i '/urgency_low/Q' "$DIR"/dunstrc
-	cat >> "$DIR"/dunstrc <<- _EOF_
+	cat > "$DIR"/dunst/dunstrc <<- _EOF_
+    [global]
+    offset = 10x35
+    corner_radius = 8
+    #Colors
 		[urgency_low]
 		timeout = 2
 		background = "${BACKGROUND}"

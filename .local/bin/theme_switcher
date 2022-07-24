@@ -5,6 +5,8 @@ BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
 
 selected_theme=$(ls ~/.config/themes | cut -d "." -f 1 | dmenu -h 24 -l 10 -nb $BACKGROUND -nf $FOREGROUND -sb $FOREGROUND -sf $BACKGROUND -fn "Cascadia Code:size=10" -p "Select Theme:")
 
-ln -sf .config/themes/$selected_theme.xresources ~/.Xresources
-
-bspc wm --restart
+if [ $? -eq 0 ];
+then
+  ln -sf .config/themes/$selected_theme.Xresources ~/.Xresources
+  bspc wm --restart
+fi

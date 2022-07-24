@@ -63,11 +63,7 @@ bspc rule -a stalonetray state=floating manage=off
 killall -9 sxhkd dunst
 
 # Lauch notification daemon
-dunst \
--geom "280x50-10+42" -frame_width "1" -font "Iosevka Custom 9" \
--lb "$BACKGROUND" -lf "$FOREGROUND" -lfr "$BLUE" \
--nb "$BACKGROUND" -nf "$FOREGROUND" -nfr "$BLUE" \
--cb "$BACKGROUND" -cf "$RED" -cfr "$RED" &
+dunst -config $HOME/.config/dunst/dunstrc &
 
 
 # Lauch keybindings daemon

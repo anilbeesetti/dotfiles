@@ -9,11 +9,11 @@ super + Return
 
 # Terminal (floating)
 super + shift + Return
-	~/.config/bin/bspterm/bspterm -f
+	~/.config/bin/bspterm -f
 
 # Terminal (fullscreen)
 super + t
-	~/.config/bin/bspterm/bspterm -s
+	~/.config/bin/bspterm -s
 
 ##---------- Applications ----------##
 
@@ -25,8 +25,14 @@ alt + F1
 super + shift + {f,w,e}
 	{pcmanfm,firefox,geany}
 
-super + x
+super + shift + x
     power_menu
+
+super + shift + t 
+  theme_switcher
+
+super + shift + w
+  set_wallpaper
 
 # Lockscreen
 ctrl + alt + l

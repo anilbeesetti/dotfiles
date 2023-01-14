@@ -13,3 +13,4 @@ fopen() {
 viopen() {
     vim "$(find $HOME -type f | fzf)"
 }
+source /usr/share/nvm/init-nvm.sh

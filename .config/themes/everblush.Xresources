@@ -25,3 +25,4 @@
 ! LightGrey + White
 *color7:  #b3b9b8 
 *color15: #bdc3c2
+*.font: Jetbrains Mono:size=9

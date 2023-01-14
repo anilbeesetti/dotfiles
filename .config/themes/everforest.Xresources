@@ -34,3 +34,4 @@
 ! white
 *.color7:       #d8caac
 *.color15:      #d8caac
+*.font: Jetbrains Mono:size=9

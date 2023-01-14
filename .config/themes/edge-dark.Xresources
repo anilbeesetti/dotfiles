@@ -35,3 +35,4 @@
 *.color13: magenta
 *.color14: cyan
 *.color15: white
+*.font: Jetbrains Mono:size=9

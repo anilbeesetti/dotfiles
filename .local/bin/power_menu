@@ -1,13 +1,9 @@
 #!/bin/sh
 
-BLUE=$(xrdb -query | grep 'color4:'| awk '{print $NF}')
-FOREGROUND=$(xrdb -query | grep 'foreground:'| awk '{print $NF}')
-BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
-
 option=$(echo "lock
 sleep
 reboot
-poweroff" | dmenu -h 24 -nb $BACKGROUND -nf $FOREGROUND -sb $BLUE -sf $BACKGROUND -fn "Cascadia Code:size=9" -p "Power menu: ")
+poweroff" | dmenu -p "Power menu: ")
 
 if [[ $option == "reboot" ]]
 then

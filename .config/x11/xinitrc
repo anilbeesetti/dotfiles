@@ -1,8 +1,21 @@
 #!/bin/sh
 
-set_wallpaper &
-xset r rate 300 50
+# xinitrc runs automatically when you run startx.
+#
+# There are some small but important commands that need to be run when we start
+# the graphical environment. There is a link to this file in ~/.xprofile
+# because that file is run automatically if someone uses a display manager
+# (login screen) and so they are needed there. To prevent doubling up commands,
+# I source them here with the line below.
 
-xmodmap -e "clear Lock" -e "keycode 0x42 = Escape"
+if [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile" ]; then
+    "${XDG_CONFIG_HOME:-$HOME/.config}/x11/xprofile"
+else
+    "$HOME/.xprofile"
+fi
 
-exec dbus-launch bspwm
+while true; do
+    dwm >/dev/null 2>&1
+done
+
+

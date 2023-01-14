@@ -15,11 +15,19 @@ super + shift + Return
 super + t
 	~/.config/bin/bspterm -s
 
+# Screenshot
+super + s
+    maim ~/pix/$(date +%s).png
+
 ##---------- Applications ----------##
 
 # App Launcher
 alt + F1
-    dmenyou_run
+    rofi -show run -config ~/.config/rofi/dmenu_theme.rasi
+
+# Application Launcher
+alt + space
+    rofi -show drun -config ~/.config/rofi/launcher_theme.rasi
 
 # Launch Apps
 super + shift + {f,w,e}

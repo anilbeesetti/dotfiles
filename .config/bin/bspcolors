@@ -86,14 +86,15 @@ bspterm () {
 
 ## Write rofi colors.rasi file with current theme colors
 bsprofi () {
-	cat > "$DIR"/rofi/themes/colors.rasi <<- EOF	
+	cat > "$DIR"/rofi/colors.rasi <<- EOF	
 	* {
 	    background:			${BACKGROUND};
+        background-alt:     ${BACKGROUND};
 	    foreground:			${FOREGROUND};
 	    selected:			${BLUE};
 	    highlight:			${YELLOW};
 	    urgent:				${RED};
-	    on:					${GREEN};
+	    active:				${GREEN};
 	    off:				${RED};
 	}
 	EOF
@@ -130,6 +131,7 @@ main () {
 	getcolors
 	bspbar
 	bspterm
+    bsprofi
 	bspdunst
 }
 

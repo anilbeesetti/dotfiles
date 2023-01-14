@@ -29,3 +29,4 @@
 ! Blanco
 *.color7:        #ABB2BF
 *.color15:       #FFFFFF
+*.font: Jetbrains Mono:size=9

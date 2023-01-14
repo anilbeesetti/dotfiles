@@ -1,7 +1,0 @@
-#!/bin/sh
-
-args=$(tee)
-FOREGROUND=$(xrdb -query | grep 'color4:'| awk '{print $NF}')
-BACKGROUND=$(xrdb -query | grep 'background:'| awk '{print $NF}')
-
-echo $args | dmenu -h 24 -nb $BACKGROUND -nf $FOREGROUND -sb $FOREGROUND -sf $BACKGROUND -fn "Cascadia Code:size=10"

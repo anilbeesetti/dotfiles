@@ -1,0 +1,15 @@
+#!/bin/sh
+
+
+# If muted, print 🔇 and exit.
+[ $(pamixer --get-mute) != false ] && echo 🔇 && exit
+
+vol="$(pamixer --get-volume)"
+case 1 in
+	$((vol >= 70)) ) icon="🔊" ;;
+	$((vol >= 30)) ) icon="🔉" ;;
+	$((vol >= 1)) ) icon="🔈" ;;
+	* ) echo 🔇 && exit ;;
+esac
+
+echo "$icon$vol%"

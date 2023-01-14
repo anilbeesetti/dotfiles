@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo " $(date "+%Y %b %d (%a) %I:%M%p")"
